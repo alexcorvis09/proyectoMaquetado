@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/* margen y padding 0 al igual que "box-sizing: content-box;" para que los tamaños sean reales
+   "background-color" acorde a la página oficial y "Google Font: Roboto" acorde a las instrucciones del profesor*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: content-box;
+  background-color: rgba(245, 245, 245, 0.7803921569);
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 56px;
+  background-color: white;
+  margin: 0px 0px 0px 0px;
+}
+.navbar .searchbar-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+.navbar .searchbar-form .navbar-burger {
+  background-color: white;
+  padding-left: 12px;
+}
+.navbar .searchbar-form .navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+.navbar .searchbar-form .navbar-brand .navbar-icon-picture {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  padding-left: 11px;
+  background-color: white;
+}
+.navbar .searchbar-form .searchbar-box {
+  height: 32px;
+  background-color: white;
+}
+.navbar .searchbar-form .searchbar-lens.picture {
+  display: flex;
+  flex-direction: column;
+  height: 32px;
+  margin-right: 400px;
+}
+.navbar .navbar-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+.navbar .navbar-buttons .navbar-login {
+  color: rgb(165, 165, 165);
+  text-decoration: none;
+  margin-right: 20px;
+  background-color: white;
+}
+.navbar .navbar-buttons .navbar-login:hover {
+  color: rgb(57, 57, 185);
+}
+.navbar .navbar-buttons .navbar-create-account {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: #3B49DF;
+  text-decoration: none;
+  background-color: white;
+  border: 10px blue;
+  margin-right: 12px;
+  border: solid 1.2px blue;
+  border-radius: 8px;
+  width: 140px;
+  height: 38px;
+  font-weight: 500;
+}
+.navbar .navbar-buttons .navbar-create-account:hover {
+  color: white;
+  text-decoration: underline;
+  background-color: #3B49DF;
+}
+
+@media screen and (min-width: 1px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .searchbar-box {
+    display: none;
+  }
+  .navbar-login {
+    display: none;
+  }
+  .navbar-burger {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchbar-lens-picture-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchbar-lens-picture {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .searchbar-box {
+    display: none;
+  }
+  .navbar-login {
+    display: none;
+  }
+  .navbar-burger {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchbar-lens-picture-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchbar-lens-picture {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    gap: 100px;
+  }
+  .searchbar-box {
+    display: none;
+  }
+  .navbar-login {
+    display: none;
+  }
+  .navbar-burger {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchbar-lens-picture-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchbar-lens-picture {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar {
+    justify-content: space-between;
+    gap: 400px;
+  }
+  .searchbar-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-login {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-burger {
+    display: none;
+  }
+  .searchbar-lens-picture-right {
+    display: none;
+  }
+  .searchbar-lens-picture {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar {
+    justify-content: space-between;
+    gap: 400px;
+  }
+  .searchbar-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-login {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-burger {
+    display: none;
+  }
+  .searchbar-lens-picture-right {
+    display: none;
+  }
+  .searchbar-lens-picture {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .navbar {
+    justify-content: center;
+    gap: 400px;
+  }
+  .searchbar-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-login {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-burger {
+    display: none;
+  }
+  .searchbar-lens-picture-right {
+    display: none;
+  }
+  .searchbar-lens-picture {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=styles.css.map */

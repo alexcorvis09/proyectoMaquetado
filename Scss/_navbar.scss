@@ -1,0 +1,83 @@
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@mixin col {
+    display:flex;
+    flex-direction: column;
+
+}
+
+.navbar {
+    @include row;
+    height: 56px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+
+    .searchbar-form {
+        @include row;
+        background-color: white;
+        
+        .navbar-burger {
+            background-color: white;
+            padding-left: 12px;
+        }
+        .navbar-brand {
+            @include row;
+            background-color: white;
+            .navbar-icon-picture {
+                @include col;
+                height: 40px;
+                padding-left: 11px;
+                background-color: white;
+            }
+        }
+        .searchbar-box {
+            height: 32px;
+            background-color: white;
+
+        }
+        .searchbar-lens.picture{
+            @include col;
+            height: 32px;
+            margin-right: 400px;
+        }
+    }
+
+    .navbar-buttons{
+        @include row;
+        background-color: white;
+
+        .navbar-login {
+            color: rgb(165, 165, 165);
+            text-decoration: none;
+            margin-right: 20px;
+            background-color: white;
+        }
+        .navbar-login:hover {
+            color: rgb(57, 57, 185);
+        }
+        
+        .navbar-create-account{
+            @include col;
+            text-align: center;
+            justify-content: center;
+            color: #3B49DF;
+            text-decoration: none;
+            background-color: white;
+            border: 10px blue;
+            margin-right: 12px;
+            border: solid 1.2px blue;
+            border-radius: 8px;
+            width: 140px;
+            height: 38px;
+            font-weight: 500;
+        }
+        .navbar-create-account:hover {
+            color: white;
+            text-decoration: underline;
+            background-color: #3B49DF;
+        }
+    }
+}

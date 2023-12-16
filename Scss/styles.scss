@@ -1,0 +1,13 @@
+/* margen y padding 0 al igual que "box-sizing: content-box;" para que los tamaños sean reales
+   "background-color" acorde a la página oficial y "Google Font: Roboto" acorde a las instrucciones del profesor*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: content-box;
+    background-color: #f5f5f5c7;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import "_navbar.scss";
+@import "_responsiveness.scss";

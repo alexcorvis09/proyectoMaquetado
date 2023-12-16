@@ -1,0 +1,135 @@
+@mixin col {
+    display:flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    .searchbar-box {
+        display: none;
+    }
+    .navbar-login {
+        display: none;
+    }
+    .navbar-burger {
+        @include col;
+    }
+    .searchbar-lens-picture-right {
+        @include col;
+    }
+    .searchbar-lens-picture {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    .searchbar-box {
+        display: none;
+    }
+    .navbar-login {
+        display: none;
+    }
+    .navbar-burger {
+        @include col;
+    }
+    .searchbar-lens-picture-right {
+        @include col;
+    }
+    .searchbar-lens-picture {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        gap: 100px;
+    }
+    .searchbar-box {
+        display: none;
+    }
+    .navbar-login {
+        display: none;
+    }
+    .navbar-burger {
+        @include col;
+    }
+    .searchbar-lens-picture-right {
+        @include col;
+    }
+    .searchbar-lens-picture {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        justify-content: space-between;
+        gap: 400px;
+    }
+
+    .searchbar-box {
+        @include col;
+    }
+    .navbar-login {
+        @include col;
+    }
+    .navbar-burger {
+        display: none;
+    }
+    .searchbar-lens-picture-right {
+        display: none;
+    }
+    .searchbar-lens-picture {
+        @include col;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        justify-content: space-between;
+        gap: 400px;
+    }
+    .searchbar-box {
+        @include col;
+    }
+    .navbar-login {
+        @include col;
+    }
+    .navbar-burger {
+        display: none;
+    }
+    .searchbar-lens-picture-right {
+        display: none;
+    }
+    .searchbar-lens-picture {
+        @include col;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .navbar {
+        justify-content: center;
+        gap: 400px;
+    }
+    .searchbar-box {
+        @include col;
+    }
+    .navbar-login {
+        @include col;
+    }
+    .navbar-burger {
+        display: none;
+    }
+    .searchbar-lens-picture-right {
+        display: none;
+    }
+    .searchbar-lens-picture {
+        @include col;
+    }
+}
