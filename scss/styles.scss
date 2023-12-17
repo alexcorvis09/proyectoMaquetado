@@ -9,5 +9,38 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.mainFrame{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0px;
+    .sidebar1{
+        width: 200px;
+        margin: 15px;
+        .createAccount{
+        }
+    button{
+        text-align: center;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    .noBorderB{
+        border: none;
+        background: none;
+        }
+        ul{
+            list-style: none;
+        }
+        }
+    .tags{
+        overflow-y: scroll;
+        scroll-behavior: auto;
+        scroll-margin: 0 10px 30px 0;
+        width: 100%;
+        height: 200px
+        }
+}
 @import "_navbar.scss";
 @import "_responsiveness.scss";
