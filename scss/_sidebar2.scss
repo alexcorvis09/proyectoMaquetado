@@ -134,3 +134,24 @@
         justify-content: center;
     }
 }
+
+
+///////// RESPONSIVE /////////
+
+$breakpointsSD: (
+    sm : 540px,
+    md : 768px,
+    lg : 1024px,
+);
+
+@mixin media-side($breakpointSD){
+    @media screen and (min-widht: map-get($breakpointsSD,$breakpointSD)){
+        @content
+    }
+}
+
+@include media-up(lg){
+    .sidebar2{
+        border: solid red 5px;
+    }
+}
