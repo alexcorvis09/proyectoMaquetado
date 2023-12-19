@@ -1,0 +1,157 @@
+// Contenedor Principal
+.sidebar2{
+    // border: solid red 1px;
+    width: 350px;
+    height: auto;
+
+    .SectionSD{ // Foros - primer bloque
+        display: flex;
+        flex-direction: column;
+        border: solid rgb(210, 223, 215) 1px;
+        margin: 10px;
+        padding: 15px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.918);
+        border-radius: 7px;
+        
+        .subContainerSD{
+            background-color:rgba(255, 255, 255, 0.918);
+            cursor: pointer;
+            display: flex;
+            
+            .titleSD{
+                color: rgb(64, 64, 64, 1);
+                text-decoration: none;
+                background-color: rgb(255, 255, 255);
+                display: block;
+                width: 100%;
+                // margin: 5px;
+
+
+                .subtitleSD{
+                    background-color: rgb(255, 255, 255);
+                    font-size: 18.5px;
+                    font-weight: 400;
+                    margin-top: 26px;
+
+                }
+
+                .subtitleSDT{
+                    background-color: rgb(255, 255, 255);
+                    font-size: 18.5px;
+                    font-weight: 400;
+
+                }
+
+                .description{
+                    margin-top: 6px;
+                    margin-bottom: 15px;
+                    display: block;
+                    background-color: white;   
+                    cursor: default; 
+                    font-size: 14.5px;
+                }
+                
+                .commentSD {//para los comments
+                    color: #717171;
+                    display: block;
+                    background-color: white;
+                    margin-top: 6px;
+                    margin-bottom: 5px;
+                }
+                #textDesc{
+                    cursor: auto; 
+                }
+                #textTitle{
+                    cursor: pointer; 
+                    font-weight: 790;
+                    font-size: 25px;
+                    // margin-top: -10px;
+                }
+                #textTitle:hover{
+                    cursor: pointer; 
+                    color: rgb(48, 60, 190);
+                }
+
+            }
+            .description{
+                color: #717171;
+            }
+            .titleSD:hover{
+                cursor: pointer; 
+                color: rgb(48, 60, 190);
+            }
+        }
+    }
+
+    /* RECURSOS - BLOQUE */
+        
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .subContResourcesSD{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-items: flex-end;
+        justify-content: center;
+
+        .titleResourcesSD{
+            margin-top: 20px;
+            margin-bottom: -20px;
+            font-size: 15px;
+            font-weight: 550;
+        }
+    }
+
+    // links de tercera seccion - RE
+    .resourcesSD{
+        display: block;
+        width: 80%;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(64, 64, 64, 1);  
+
+    }
+
+    .resourcesSD:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(86, 95, 188);
+    }
+
+    .titleResourcesSD{
+        width: 90%;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        justify-items: center;
+        justify-content: center;
+    }
+}
+
+
+///////// RESPONSIVE /////////
+
+$breakpointsSD: (
+    sm : 540px,
+    md : 768px,
+    lg : 1024px,
+);
+
+@mixin media-side($breakpointSD){
+    @media screen and (min-widht: map-get($breakpointsSD,$breakpointSD)){
+        @content
+    }
+}
+
+@include media-up(lg){
+    .sidebar2{
+        border: solid red 5px;
+    }
+}
