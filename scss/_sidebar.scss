@@ -1,38 +1,31 @@
 $highlight: #bfc3ee;
 $colorFontAccent:#6e77d9;
 $buttonAccent: #2f3ab2;
-$fontSizing: 13px;
+$fontSizing: 16px;
 $containerBorder:rgb(227, 227, 227);
 
-.mainFrame{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    padding: 0;
-    margin: 30px;
-    width: 200px;
-    margin-top: 18px;
     .sidebar1{
         display: flex;
         flex-flow: column;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         padding: 0;
-        margin: 10%;
+        margin: 10px;
+        width: 350px;
         .createAccount{
-            height: 12%;
+            height: 140px;
             border: 1px solid $containerBorder;
             border-radius: 8px;
             background-color: white;
-            width: 200px;
+            width: 100%;
             .buttonsSidebar{
                 padding: 10px;
                 border-radius: 10%;
-                height: 15%;
+                height: 30px;
                 border: $buttonAccent;
             }
         }
         .navigationList{
-            height: 27%;
+            height: 280px;
         }
 
     button{
@@ -122,5 +115,3 @@ $containerBorder:rgb(227, 227, 227);
         color: blue;
       }
     }
-
-}
