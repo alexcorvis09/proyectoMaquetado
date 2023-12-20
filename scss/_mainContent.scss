@@ -1,8 +1,13 @@
-.mainContent{ //2columna cards
-    width: 1000px;
-    border: solid rgb(184, 29, 226) 10px;
+.content{
     display: flex;
     flex-direction: column;
+}
+.mainContent{ //2columna cards
+    min-width: 500px;
+    // border: solid rgb(184, 29, 226) 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
     .row{
         border: solid rgb(58, 24, 124) 1px;
@@ -20,7 +25,7 @@
         align-items: center;
 
         .cintilla{
-            border: solid rgb(119, 230, 71) 1px;
+            border: solid rgb(14, 14, 14) 1px;
             display: flex;
             height: 50px;
             width: 33%;
@@ -33,6 +38,31 @@
             cursor: pointer;
         }
        
+    }
+
+    .mainCard{ //mi card
+        background-color: rgb(255, 254, 254);
+        margin-top: 10px;
+        
+        .imgCardPrin{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+        .fotoPerfil{
+            border-radius: 70%;
+            margin: 10px;
+            margin-top: 10px;
+        }
+        .contCard{
+            display: flex;
+            width: 100%;
+            height: auto;
+            background-color: aqua;
+        }
+            
+
+        
     }
 
 }
