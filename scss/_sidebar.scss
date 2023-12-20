@@ -12,16 +12,18 @@ $containerBorder:rgb(227, 227, 227);
         margin: 10px;
         width: 350px;
         .createAccount{
-            height: 140px;
+            height: 130px;
             border: 1px solid $containerBorder;
             border-radius: 8px;
             background-color: white;
-            width: 100%;
+            width: 300px;
+            align-content: center;
             .buttonsSidebar{
                 padding: 10px;
                 border-radius: 10%;
                 height: 30px;
                 border: $buttonAccent;
+                align-self: center;
             }
         }
         .navigationList{
@@ -74,7 +76,7 @@ $containerBorder:rgb(227, 227, 227);
             list-style: none;
         }
         }
-    .tags{
+    .popularTags{
         overflow-y: scroll;
         scroll-behavior: auto;
         scroll-margin: 0 10px 30px 0;

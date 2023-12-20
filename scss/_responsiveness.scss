@@ -3,6 +3,20 @@
     flex-direction: column;
 }
 
+@media screen and (max-width:768px){
+    .sidebar1{
+        display:none;
+    }
+    .mainContent{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .sidebar2{
+    display: none;
+    }
+}
+/*
 @media screen and (min-width: 1px) {
     .navbar {
         justify-content: space-between;
@@ -21,6 +35,12 @@
     }
     .searchbar-lens-picture {
         display: none;
+    }
+    .mainFrame{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-self: center;
     }
 }
 
@@ -132,4 +152,4 @@
     .searchbar-lens-picture {
         @include col;
     }
-}
+}*/
