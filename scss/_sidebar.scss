@@ -1,7 +1,6 @@
 $highlight: #bfc3ee;
 $colorFontAccent:#6e77d9;
 $buttonAccent: #2f3ab2;
-$fontSizing: 16px;
 $containerBorder:rgb(227, 227, 227);
 
     .sidebar1{
@@ -12,12 +11,13 @@ $containerBorder:rgb(227, 227, 227);
         margin: 10px;
         width: 350px;
         .createAccount{
-            height: 130px;
+            height: 150px;
             border: 1px solid $containerBorder;
             border-radius: 8px;
             background-color: white;
             width: 300px;
             align-content: center;
+            font-size: 16px;
             .buttonsSidebar{
                 padding: 10px;
                 border-radius: 10%;
@@ -27,12 +27,13 @@ $containerBorder:rgb(227, 227, 227);
             }
         }
         .navigationList{
-            height: 280px;
+            height: 370px;
+            font-size: 16px;
         }
 
     button{
         text-align: center;
-        font-size: $fontSizing;
+        font-size: 17px;
     }
     button:hover{
         cursor: pointer;
@@ -80,8 +81,12 @@ $containerBorder:rgb(227, 227, 227);
         overflow-y: scroll;
         scroll-behavior: auto;
         scroll-margin: 0 10px 30px 0;
-        height: 250px
+        height: 250px;
+        font-size: 16px;
         }
+    .tags{
+        font-size: 20px;
+    }
     .tags a:hover{
         background-color: $highlight;
         display: block;
@@ -91,6 +96,7 @@ $containerBorder:rgb(227, 227, 227);
     .tags a:link{
         text-decoration: none;
         color: black;
+        font-size: 16px;
     }
    
     .socialMediaButtons{
@@ -100,20 +106,24 @@ $containerBorder:rgb(227, 227, 227);
         background-color: $highlight;
     }
     .community{
-        height: 300px;
+        height: 400px;
         border: 1px solid $containerBorder;
         border-radius: 8px;
         background-color: white;
-        width: 200px;
+        width: 300px;
         margin: 2px;
-        a{
-            font-size: $fontSizing;
-        }
+        padding: 10px;
+        font-size: 16px;
         .devCommunityimg{
         width: 100%;
     }
         .survey:link{
         text-decoration: underline;
         color: blue;
+      }
+      footer{
+        p{
+            font-size: 14px;
+        }
       }
     }
