@@ -8,6 +8,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.mainFrame{
+    display: flex;
+    flex-wrap: row wrap;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 30px;
+    margin-top: 18px;
+}
 
 @import "_navbar.scss";
 @import "_responsiveness.scss";
