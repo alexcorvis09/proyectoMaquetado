@@ -1,0 +1,38 @@
+.mainContent{ //2columna cards
+    width: 1000px;
+    border: solid rgb(184, 29, 226) 10px;
+    display: flex;
+    flex-direction: column;
+    
+    .row{
+        border: solid rgb(58, 24, 124) 1px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menuCard{
+        border: solid rgb(222, 60, 6) 5px;
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        background-color: aqua;
+        height: 50px;
+        align-items: center;
+
+        .cintilla{
+            border: solid rgb(119, 230, 71) 1px;
+            display: flex;
+            height: 50px;
+            width: 33%;
+            font-size: 25px;
+            font-weight: 100;
+        }
+
+        .cintilla:hover{
+            background-color: white;
+            cursor: pointer;
+        }
+       
+    }
+
+}
