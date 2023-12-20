@@ -13,6 +13,8 @@
         border: solid rgb(58, 24, 124) 1px;
         display: flex;
         flex-direction: row;
+        // background-color: rgb(183, 149, 180);
+        width: 100%;
     }
 
     .menuCard{
@@ -37,7 +39,6 @@
             background-color: white;
             cursor: pointer;
         }
-       
     }
 
     .mainCard{ //mi card
@@ -47,21 +48,49 @@
         .imgCardPrin{
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
-
+            
         }
         .fotoPerfil{
-            border-radius: 70%;
+            border-radius: 15%;
             margin: 10px;
             margin-top: 10px;
+            width: 30px;
+            height: 30px;
         }
+        
         .contCard{
             display: flex;
+            flex-direction: column;
             width: 100%;
             height: auto;
-            background-color: aqua;
+            background-color: rgb(255, 255, 255);
         }
-            
+        
+        .fotoPerfilEncima{
 
+            border-radius: 100%;
+            border: 1px solid rgb(255, 255, 255);
+            width: 20px;
+            height: 20px;
+            display: flex;
+            background-color: aqua;
+            // justify-content: flex-start;
+            position: absolute;
+            margin-left: 25px;
+            margin-top: 25px;
+            
+        }
+        .col{
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            border: solid RED 5PX;
+
+        }
+
+        .textCol{
+            width: 100%;
+        }
         
     }
 
