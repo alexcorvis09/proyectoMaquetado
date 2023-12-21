@@ -13,7 +13,7 @@
     // justify-content: center;
     
     .row{
-        border: solid rgb(58, 24, 124) 1px;
+        // border: solid rgb(58, 24, 124) 1px;
         display: flex;
         flex-direction: row;
         // background-color: rgb(183, 149, 180);
@@ -21,26 +21,31 @@
     }
 
     .menuCard{
-        border: solid rgb(222, 60, 6) 5px;
+        // border: solid rgb(222, 60, 6) 5px;
         display: flex;
         flex-direction: row;
         width: 50%;
-        background-color: aqua;
+        background-color: rgb(255, 255, 255);
         height: 50px;
         align-items: center;
 
         .cintilla{
-            border: solid rgb(14, 14, 14) 1px;
+            // border: solid rgb(14, 14, 14) 1px;
             display: flex;
-            height: 50px;
+            height: 20px;
             width: 33%;
-            font-size: 25px;
+            font-size: 10px;
             font-weight: 100;
+            text-decoration: none;
+            background-color: white;
+            color: black;
+            
         }
-
+        
         .cintilla:hover{
             background-color: white;
             cursor: pointer;
+            color: rgb(65, 28, 166);
         }
     
     }
@@ -113,8 +118,8 @@
         .col{
             display: flex;
             flex-direction: column;
-            background-color: aqua;
-            border: solid RED 5PX;
+            background-color: rgb(255, 255, 255);
+            // border: solid RED 5PX;
 
         }
 
