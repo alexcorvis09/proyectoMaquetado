@@ -35,7 +35,8 @@
     
     }
     .rowPosts{
-        height: 300px;
+        display: flex;
+        height: 560px;
         border: 1px solid ;
         border-radius: 8px;
         background-color: white;
@@ -43,7 +44,19 @@
         align-content: center;
         font-size: 16px;
         border: 1px solid rgb(197, 197, 197);
-        
+    .dropDownbtn{
+        justify-content: flex-end;
+        border-radius: 10%;
+        border: none;
+        cursor: pointer;
+    }
+    .responsiveimg{
+        width: 80%;
+        text-align: center;
+    }
+    .post a:visited{
+    color: blue;
+    }
    }
-
 }
+
