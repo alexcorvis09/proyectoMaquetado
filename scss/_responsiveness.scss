@@ -28,6 +28,12 @@
         width: 100%;
         align-self: center;
     }
+    .sidebar1 {
+        display: none;
+    }
+    .sidebar2 {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -73,6 +79,16 @@
     }
 }
 
+@media screen and (min-width: 924px) {
+    .sidebar1 {
+        display: none;
+    }
+
+    .sidebar2 {
+        display: flex;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .navbar {
         justify-content: space-between;
@@ -115,6 +131,12 @@
     }
     .searchbar-lens-picture {
         @include col;
+    }
+    .sidebar1 {
+        display: flex;
+    }
+    .sidebar2 {
+        display: flex;
     }
 }
 
