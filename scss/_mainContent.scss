@@ -1,16 +1,16 @@
-.content{
-// .mainContent{ //2columna cards
-//     width: 60%;
+// .content{
+.mainContent{ //2columna cards
+    width: 60%;
 //     border: solid rgb(184, 29, 226) 10px;
     display: flex;
     flex-direction: column;
-}
-.mainContent{ //2columna cards
-    min-width: 500px;
+
+// .mainContent{ //2columna cards
+    // min-width: 500px;
     // border: solid rgb(184, 29, 226) 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
     
     .row{
         border: solid rgb(58, 24, 124) 1px;
@@ -45,7 +45,8 @@
     
     }
     .rowPosts{
-        height: 300px;
+        display: flex;
+        height: 560px;
         border: 1px solid ;
         border-radius: 8px;
         background-color: white;
@@ -53,8 +54,21 @@
         align-content: center;
         font-size: 16px;
         border: 1px solid rgb(197, 197, 197);
-        
+    .dropDownbtn{
+        justify-content: flex-end;
+        border-radius: 10%;
+        border: none;
+        cursor: pointer;
+    }
+    .responsiveimg{
+        width: 80%;
+        text-align: center;
+    }
+    .post a:visited{
+    color: blue;
+    }
    }
+}
 
     .mainCard{ //mi card
         background-color: rgb(255, 254, 254);
@@ -63,6 +77,7 @@
         .imgCardPrin{
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
+            width: 100%;
             
         }
         .fotoPerfil{
@@ -109,4 +124,4 @@
         
     }
 
-}
+
