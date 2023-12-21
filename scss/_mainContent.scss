@@ -1,13 +1,23 @@
+// .content{
 .mainContent{ //2columna cards
     width: 60%;
-    border: solid rgb(184, 29, 226) 10px;
+//     border: solid rgb(184, 29, 226) 10px;
     display: flex;
     flex-direction: column;
+
+// .mainContent{ //2columna cards
+    // min-width: 500px;
+    // border: solid rgb(184, 29, 226) 10px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
     
     .row{
         border: solid rgb(58, 24, 124) 1px;
         display: flex;
         flex-direction: row;
+        // background-color: rgb(183, 149, 180);
+        width: 100%;
     }
 
     .menuCard{
@@ -20,7 +30,7 @@
         align-items: center;
 
         .cintilla{
-            border: solid rgb(119, 230, 71) 1px;
+            border: solid rgb(14, 14, 14) 1px;
             display: flex;
             height: 50px;
             width: 33%;
@@ -59,4 +69,59 @@
     }
    }
 }
+
+    .mainCard{ //mi card
+        background-color: rgb(255, 254, 254);
+        margin-top: 10px;
+        
+        .imgCardPrin{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 100%;
+            
+        }
+        .fotoPerfil{
+            border-radius: 15%;
+            margin: 10px;
+            margin-top: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        
+        .contCard{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .fotoPerfilEncima{
+
+            border-radius: 100%;
+            border: 1px solid rgb(255, 255, 255);
+            width: 20px;
+            height: 20px;
+            display: flex;
+            background-color: aqua;
+            // justify-content: flex-start;
+            position: absolute;
+            margin-left: 25px;
+            margin-top: 25px;
+            
+        }
+        .col{
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            border: solid RED 5PX;
+
+        }
+
+        .textCol{
+            width: 100%;
+        }
+        
+    }
+
 

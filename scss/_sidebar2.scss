@@ -3,12 +3,14 @@
     // border: solid red 1px;
     width: 350px;
     height: auto;
+    display: flex;
+    flex-direction: column;
 
     .SectionSD{ // Foros - primer bloque
         display: flex;
         flex-direction: column;
         border: solid rgb(210, 223, 215) 1px;
-        margin: 10px;
+        margin: 0px 10px 10px 10px;
         padding: 15px;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.918);
@@ -97,6 +99,8 @@
         width: 100%;
         justify-items: flex-end;
         justify-content: center;
+        border-bottom: 1px solid rgb(178, 173, 173);
+        margin-bottom: 10px;
 
         .titleResourcesSD{
             margin-top: 20px;
@@ -116,6 +120,7 @@
         padding: 10px;
         text-decoration: none;
         color: rgb(64, 64, 64, 1);  
+        font-size: 16px;
 
     }
 
@@ -132,26 +137,5 @@
         padding: 10px;
         justify-items: center;
         justify-content: center;
-    }
-}
-
-
-///////// RESPONSIVE /////////
-
-$breakpointsSD: (
-    sm : 540px,
-    md : 768px,
-    lg : 1024px,
-);
-
-@mixin media-side($breakpointSD){
-    @media screen and (min-widht: map-get($breakpointsSD,$breakpointSD)){
-        @content
-    }
-}
-
-@include media-side(lg){
-    .sidebar2{
-        border: solid red 5px;
     }
 }
