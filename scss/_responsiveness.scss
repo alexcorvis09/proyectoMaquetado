@@ -22,6 +22,12 @@
     .searchbar-lens-picture {
         display: none;
     }
+    .mainFrame{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-self: center;
+    }
 }
 
 @media screen and (min-width: 576px) {
