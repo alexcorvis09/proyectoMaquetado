@@ -40,6 +40,12 @@
     .sidebar2{
         display: none;
     }
+    .sidebar1 {
+        display: none;
+    }
+    .sidebar2 {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -90,6 +96,16 @@
 
     .sidebar2{
         display: none;
+    }
+}
+
+@media screen and (min-width: 924px) {
+    .sidebar1 {
+        display: none;
+    }
+
+    .sidebar2 {
+        display: flex;
     }
 }
 
@@ -148,6 +164,12 @@
     }
     .searchbar-lens-picture {
         @include col;
+    }
+    .sidebar1 {
+        display: flex;
+    }
+    .sidebar2 {
+        display: flex;
     }
 }
 
