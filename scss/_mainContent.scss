@@ -11,7 +11,7 @@
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
-    
+
     .row{
         // border: solid rgb(58, 24, 124) 1px;
         display: flex;
@@ -21,44 +21,48 @@
     }
 
     .menuCard{
-        // border: solid rgb(222, 60, 6) 5px;
         display: flex;
         flex-direction: row;
         width: 50%;
-        background-color: rgb(255, 255, 255);
+        width: auto;
+        background-color:#F5F5F5;
         height: 50px;
         align-items: center;
 
         .cintilla{
-            // border: solid rgb(14, 14, 14) 1px;
-            display: flex;
-            height: 20px;
-            width: 33%;
-            font-size: 10px;
-            font-weight: 100;
-            text-decoration: none;
-            background-color: white;
-            color: black;
             
+            margin-right: 15px;
+            font-size: 20px;
+            // font-weight: 100;
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+
+        }
+
+        .mainText{
+            font-weight: 700;
+
         }
         
         .cintilla:hover{
-            background-color: white;
+            background: #ffffff;
             cursor: pointer;
             color: rgb(65, 28, 166);
+            height: fit-content;
+            width: fit-content;
+            border: solid rgba(210, 223, 215, 0.541) 1px;
+            border-radius: 5px;
+           
         }
-    
+
     }
     .rowPosts{
-        display: flex;
-        height: 560px;
-        border: 1px solid ;
+        display: block;
+        height: auto;
         border-radius: 8px;
-        background-color: white;
-        width: 100%;
-        align-content: center;
+        // background-color: white;
         font-size: 16px;
-        border: 1px solid rgb(197, 197, 197);
     .dropDownbtn{
         justify-content: flex-end;
         border-radius: 10%;
@@ -72,18 +76,22 @@
     .post a:visited{
     color: blue;
     }
+
    }
 }
 
     .mainCard{ //mi card
         background-color: rgb(255, 254, 254);
         margin-top: 10px;
-        
+        border: #dbdbdb 1px solid;
+        border-top-left-radius: 13px ;
+        border-top-right-radius: 13px ;
+
         .imgCardPrin{
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             width: 100%;
-            
+
         }
         .fotoPerfil{
             border-radius: 15%;
@@ -92,7 +100,7 @@
             width: 30px;
             height: 30px;
         }
-        
+
         .contCard{
             display: flex;
             flex-direction: column;
@@ -100,7 +108,7 @@
             height: auto;
             background-color: rgb(255, 255, 255);
         }
-        
+
         .fotoPerfilEncima{
 
             border-radius: 100%;
@@ -113,7 +121,7 @@
             position: absolute;
             margin-left: 25px;
             margin-top: 25px;
-            
+
         }
         .col{
             display: flex;
@@ -126,7 +134,7 @@
         .textCol{
             width: 100%;
         }
-        
+
     }
 
 
